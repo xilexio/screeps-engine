@@ -218,7 +218,8 @@
             container: globals.StructureContainer,
             spawn: globals.StructureSpawn,
             nuker: globals.StructureNuker,
-            portal: globals.StructurePortal
+            portal: globals.StructurePortal,
+            invaderCore: globals.StructureInvaderCore
         };
 
         var c = {};
