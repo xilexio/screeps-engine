@@ -7,7 +7,7 @@ module.exports = function(object, {roomObjects, bulk, roomController, gameTime})
 
     if(!object || object.type != 'rampart') return;
 
-    if(roomController) {
+    if(roomController && object.user != '2') {
         var hitsMax = object.user == roomController.user ? C.RAMPART_HITS_MAX[roomController.level] || 0 : 0;
         if(hitsMax != object.hitsMax) {
             bulk.update(object, {hitsMax});
